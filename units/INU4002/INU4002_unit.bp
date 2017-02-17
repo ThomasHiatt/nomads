@@ -477,7 +477,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_LowArc',
             BombardParticipant = true,
             BombardSwingTurret = true,
-            BombardTurretYawRange = 5,
+            --BombardTurretYawRange = 5,
             CollideFriendly = false,
             Damage = 300,
             DamageRadius = 0.5,
