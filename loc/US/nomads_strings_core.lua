@@ -693,7 +693,7 @@ inu3008_name = "Scarab"
 
 -- T3 tracked tank
 inu3009_desc = "Armored Assault Tank"
-inu3009_help = "Tracked tank unit that carries dual plasma cannons and very heavy armor."
+inu3009_help = "Tank that carries dual cannons and heavy armor. Have anchor option for defensive use."
 inu3009_name = "Slugger"
 
 
