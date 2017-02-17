@@ -686,9 +686,9 @@ inu3007_desc = "Mobile Anti-Air Missile Launcher"
 inu3007_help = "Launches anti-air missiles at enemy aircraft."
 inu3007_name = "Watchman"
 
--- T3 mobile missile defense
+-- T2 mobile missile defense
 inu3008_desc = "Field Engineer"
-inu3008_help = "Hover unit equipped with limited engineering capabilities and a tactical missile defense installation. Can only construct offensive and defensive structures."
+inu3008_help = "Hover unit equipped with engineering capabilities and a tactical missile defense installation. Have anchor option for higer intel and build capacity."
 inu3008_name = "Scarab"
 
 -- T3 tracked tank
