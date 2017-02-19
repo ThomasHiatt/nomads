@@ -541,7 +541,7 @@ UnitBlueprint {
             FiringRandomness = 0,
             FiringTolerance = 180,
             Label = 'AAMissile',
-            MinRadius = 3,
+            MinRadius = 0,
             MaxRadius = 40,
             MuzzleSalvoDelay = 0.2,
             MuzzleSalvoSize = 2,
