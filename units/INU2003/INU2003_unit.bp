@@ -1,4 +1,4 @@
---T2 mml Avalanche
+-- T2 mml Avalanche
 
 UnitBlueprint {
     AI = {
@@ -243,7 +243,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_HighArc',
             
             BombardParticipant = true,
-            BombardSwingTurret = true,
+            BombardSwingTurret = false,
             
             CollideFriendly = false,
             Damage = 200,
