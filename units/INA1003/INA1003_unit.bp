@@ -1,3 +1,5 @@
+-- T1 bomber
+
 UnitBlueprint {
     AI = {
         GuardReturnRadius = 120,
@@ -107,7 +109,6 @@ UnitBlueprint {
         'VISIBLETORECON',
         'RECLAIMABLE',
         'SHOWATTACKRETICLE',
-        'OVERLAYRADAR',
     },
     CollisionOffsetZ = -0.15,
     Defense = {
@@ -122,9 +123,6 @@ UnitBlueprint {
     },
     Description = '<LOC ina1003_desc>Attack Bomber',
     Display = {
-        Abilities = {
-            '<LOC ability_radar>Radar',
-        },
         BuildEffect = {
             ExtendsTop = 0.1,
         },
@@ -186,12 +184,12 @@ UnitBlueprint {
         },
         PlaceholderMeshName = 'UXA0002',
         SpawnRandomRotation = true,
-        UniformScale = 0.125,
+        UniformScale = 0.093-- from 0.125,
     },
     Economy = {
-        BuildCostEnergy = 2450,
-        BuildCostMass = 105,
-        BuildTime = 700,
+        BuildCostEnergy = 2400,
+        BuildCostMass = 120,
+        BuildTime = 800,
     },
     Footprint = {
         MaxSlope = 0.25,
@@ -261,7 +259,7 @@ UnitBlueprint {
     StrategicIconSortPriority = 75,
     Transport = {
         AirClass = true,
-        TransportClass = 2,
+        TransportClass = 1,
     },
     Veteran = {
         Level1 = 3,

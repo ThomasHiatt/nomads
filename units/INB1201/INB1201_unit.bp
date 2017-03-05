@@ -1,3 +1,5 @@
+-- T2 pgen
+
 UnitBlueprint {
     Adjacency = 'T2PowerGeneratorAdjacencyBuffs',
     Audio = {
@@ -207,7 +209,7 @@ UnitBlueprint {
         AdjacentStructureEnergyMod = -4,
         BuildCostEnergy = 12000,
         BuildCostMass = 1200,
-        BuildTime = 2000,
+        BuildTime = 2198,
         ProductionPerSecondEnergy = 500,
         RebuildBonusIds = {
             'inb1201',

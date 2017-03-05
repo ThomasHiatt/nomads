@@ -1,4 +1,11 @@
+-- T1 land scout
+
 UnitBlueprint {
+    Abilities = {
+        Anchor = {
+            Buff = 'AnchorModeImmobilizeAddRange',
+        },
+    },
     Audio = {
         AmbientIdle = Sound {
             Bank = 'NomadsUnits',
@@ -84,6 +91,7 @@ UnitBlueprint {
     Description = '<LOC inu1002_desc>Land Scout',
     Display = {
         Abilities = {
+            '<LOC ability_anchor>Anchor',        
             '<LOC ability_hover>Hover',
             '<LOC ability_radar>Radar',
         },
@@ -220,8 +228,8 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        RadarRadius = 45,
-        VisionRadius = 24,
+        RadarRadius = 40,   --52 with anchor
+        VisionRadius = 24,  --31,2 with anchor
     },
     Interface = {
         HelpText = '<LOC inu1002_help>Land Scout',
@@ -252,11 +260,11 @@ UnitBlueprint {
         MeshExtentsZ = 0.65,
         MinSpeedPercent = 0,
         MotionType = 'RULEUMT_Hover',
-        OnWaterBuff = 'OnWaterSpeed80',
         RotateBodyWhileMoving = true,
         TurnFacingRate = 90,
         TurnRadius = 5,
         TurnRate = 90,
+        WaterSpeedMultiplier = 0.9,
         WobbleFactor = 0,
         WobbleSpeed = 0,
     },
@@ -301,7 +309,7 @@ UnitBlueprint {
             },
             FiringTolerance = 2,
             Label = 'MainGun',
-            MaxRadius = 8,
+            MaxRadius = 23,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 35,

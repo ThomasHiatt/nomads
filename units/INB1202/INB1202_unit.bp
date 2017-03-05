@@ -1,3 +1,5 @@
+-- T2 mex
+
 UnitBlueprint {
     Adjacency = 'T2MassExtractorAdjacencyBuffs',
     Audio = {
@@ -44,8 +46,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
         EconomyThreatLevel = 1500,
-        Health = 3000,
-        MaxHealth = 3000,
+        Health = 1900,
+        MaxHealth = 1900,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
@@ -94,8 +96,8 @@ UnitBlueprint {
     Economy = {
         BuildCostEnergy = 5400,
         BuildCostMass = 900,
-        BuildRate = 15,
-        BuildTime = 900,
+        BuildRate = 20.58,
+        BuildTime = 1171,
         BuildableCategory = {
             'inb1302',
         },
@@ -103,7 +105,6 @@ UnitBlueprint {
         ProductionPerSecondMass = 6,
         RebuildBonusIds = {
             'inb1202',
-            'inb1302',
         },
     },
     Footprint = {
@@ -129,7 +130,7 @@ UnitBlueprint {
             RULEUCC_Transport = false,
         },
         FactionName = 'Nomads',
-        Icon = 'land',
+        Icon = 'amph',
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Advanced',
         ToggleCaps = {
@@ -181,7 +182,7 @@ UnitBlueprint {
     SizeY = 1.4,
     SizeZ = 1.1,
     StrategicIconName = 'icon_structure2_mass',
-    StrategicIconSortPriority = 245,
+    StrategicIconSortPriority = 64,
     Wreckage = {
         Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',
         EnergyMult = 0,
@@ -191,7 +192,7 @@ UnitBlueprint {
         WreckageLayers = {
             Air = false,
             Land = true,
-            Seabed = false,
+            Seabed = true,
             Sub = false,
             Water = false,
         },

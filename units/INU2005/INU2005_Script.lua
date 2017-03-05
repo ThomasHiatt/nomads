@@ -1,19 +1,18 @@
--- T2 main tank
+-- T2 tank Brute
 
+local AddAnchorAbilty = import('/lua/nomadsutils.lua').AddAnchorAbilty
 local NomadsEffectTemplate = import('/lua/nomadseffecttemplate.lua')
-local SupportingArtilleryAbility = import('/lua/nomadsutils.lua').SupportingArtilleryAbility
 local NLandUnit = import('/lua/nomadsunits.lua').NLandUnit
 local ParticleBlaster1 = import('/lua/nomadsweapons.lua').ParticleBlaster1
 
-NLandUnit = SupportingArtilleryAbility( NLandUnit )
+NLandUnit = AddAnchorAbilty(NLandUnit)
+
 
 INU2005 = Class(NLandUnit) {
     Weapons = {
         MainGun = Class(ParticleBlaster1) {},
     },
 
-    ArtillerySupportFxBone = 'ArtillerySupport',
-    HideArtillerySupport = false,
     HideBarrel1 = false,
     HideBarrel2 = false,
     HideBarrel3 = false,
@@ -22,8 +21,6 @@ INU2005 = Class(NLandUnit) {
 
     OnCreate = function(self)
         NLandUnit.OnCreate(self)
-
-        if self.HideArtillerySupport then self:HideBone('ArtillerySupport', true) end
         if self.HideBarrel1 then self:HideBone('Barrel1', true) end
         if self.HideBarrel2 then self:HideBone('Barrel2', true) end
         if self.HideBarrel3 then self:HideBone('Barrel3', true) end
@@ -42,6 +39,14 @@ INU2005 = Class(NLandUnit) {
             emit = CreateAttachedEmitter(self, bone, army, v)
             self.Trash:Add(emit)
         end
+    end,
+    
+    EnableSpecialToggle = function(self)
+        self:EnableAnchor(self)
+    end,
+
+    DisableSpecialToggle = function(self)
+        self:DisableAnchor(self)
     end,
 }
 

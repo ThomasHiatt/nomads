@@ -1,3 +1,5 @@
+-- T1 Air Factory
+
 UnitBlueprint {
     AI = {
         TargetBones = {
@@ -61,8 +63,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
         EconomyThreatLevel = 3,
-        Health = 3600,
-        MaxHealth = 3600,
+        Health = 3100,
+        MaxHealth = 3100,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
@@ -118,10 +120,7 @@ UnitBlueprint {
             'TRANSPORTBUILTBYTIER1FACTORY NOMADS MOBILE AIR',
         },
         RebuildBonusIds = {
--- TODO: think about this. See T1 land factory for more info
             'inb0102',
-            'inb0202',
-            'inb0202',
         },
         StorageEnergy = 0,
         StorageMass = 0,

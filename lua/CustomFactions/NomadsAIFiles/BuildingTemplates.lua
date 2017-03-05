@@ -25,7 +25,7 @@ BuildingTemplates = {
         },
         {
             'T1MassCreation',
-            'inb1103',
+            'inb1104',
         },
         {
             'T2Resource',
@@ -94,7 +94,7 @@ BuildingTemplates = {
         -- Storage Structures
         {
             'MassStorage',
-            'inb1108',
+            'inb1106',
         },
         {
             'EnergyStorage',

@@ -1,4 +1,10 @@
+-- T2 mml Avalanche
+
 UnitBlueprint {
+    AI = {
+        BombardModeCheckRadius = 8,
+        BombardModeCheckUnits = 4,
+    },
     Audio = {
         AmbientMove = Sound {
             Bank = 'URL',
@@ -59,6 +65,7 @@ UnitBlueprint {
         'VISIBLETORECON',
         'RECLAIMABLE',
         'OVERLAYINDIRECTFIRE',
+        'SILO',
     },
     Defense = {
         AirThreatLevel = 0,
@@ -75,6 +82,7 @@ UnitBlueprint {
         Abilities = {
             '<LOC ability_amphibious>Amphibious',
             '<LOC ability_submergedsurfaceattack>Attacks from under water',
+            '<LOC ability_bombardarea>Area bombardment',
             '<LOC ability_supportedartillerygun>Supported Artillery Gun',
         },
         BuildEffect = {
@@ -156,14 +164,14 @@ UnitBlueprint {
         FactionName = 'Nomads',
         Icon = 'amph',
         OrderOverrides = {
-            RULEUTC_SpecialToggle = {
-                bitmapId = 'toggle-anchor',
-                helpText = 'toggle_anchor',
+            RULEUTC_WeaponToggle = {
+                bitmapId = 'toggle-bombardmode',
+                helpText = 'toggle_bombardmode',
             },
         },
         TechLevel = 'RULEUTL_Advanced',
         ToggleCaps = {
-            RULEUTC_SpecialToggle = true,
+            RULEUTC_WeaponToggle = true,
         },
         UnitName = '<LOC inu2003_name>Avalanche',
         UnitWeight = 1,
@@ -175,8 +183,8 @@ UnitBlueprint {
         HelpText = '<LOC inu2003_help>Mobile Missile Launcher',
     },
     LifeBarHeight = 0.075,
-    LifeBarOffset = 0.25,
-    LifeBarSize = 0.5,
+    LifeBarOffset = 0.35,
+    LifeBarSize = 1,
     Physics = {
         BackUpDistance = 4,
         BankingSlope = 0,
@@ -199,7 +207,7 @@ UnitBlueprint {
         MeshExtentsZ = 1.25,
         MinSpeedPercent = 0,
         MotionType = 'RULEUMT_Amphibious',
-        OnInWaterBuff = 'OnWaterSpeed80',
+        WaterSpeedMultiplier = 0.9,
         RotateOnSpot = true,
         RotateOnSpotThreshold = 0.1,
         TurnRadius = 0,
@@ -234,6 +242,10 @@ UnitBlueprint {
                 },
             },
             BallisticArc = 'RULEUBA_HighArc',
+            
+            BombardParticipant = true,
+            BombardSwingTurret = false,
+            
             CollideFriendly = false,
             Damage = 200,
             DamageFriendly = false,
@@ -246,13 +258,13 @@ UnitBlueprint {
                 Seabed = 'Land|Water',
                 Sub = 'Land|Water',
             },
-            FiringRandomness = 0.9,
-            FiringRandomnessWhileMoving = 1.1,
+            FiringRandomness = 0.5,
+            FiringRandomnessWhileMoving = 1,
             FiringTolerance = 1,
             Label = 'MainGun',
             MaxRadius = 60,
             MaxRadiusUnderWater = 45,
-            MinRadius = 15,
+            MinRadius = 5,
             MuzzleChargeDelay = 0,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 2,
@@ -286,7 +298,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_IndirectFire',
-            RateOfFire = 0.12,
+            RateOfFire = 0.125,
             RenderFireClock = true,
             TargetCheckInterval = 1,
             TargetPriorities = {

@@ -1,3 +1,5 @@
+-- T3 Artillery Installation
+
 UnitBlueprint {
     Audio = {
         DeathExplosion = Sound {
@@ -97,8 +99,8 @@ UnitBlueprint {
         UniformScale = 0.48,
     },
     Economy = {
-        BuildCostEnergy = 1000000,
-        BuildCostMass = 100000,
+        BuildCostEnergy = 900000,
+        BuildCostMass = 90000,
         BuildTime = 40000,
         RebuildBonusIds = {
             'inb2302',
@@ -202,7 +204,7 @@ UnitBlueprint {
             FiringRandomness = 0.7,
             FiringTolerance = 360,
             Label = 'TargetFinder',
-            MaxRadius = 750,
+            MaxRadius = 700,
             MinRadius = 150,
             MuzzleSalvoDelay = 0.5,
             MuzzleSalvoSize = 5,
@@ -227,7 +229,7 @@ UnitBlueprint {
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_IndirectFire',
             RateOfFire = 0.08,
-            TargetCheckInterval = 8,
+            TargetCheckInterval = 60,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
                 'STRUCTURE',

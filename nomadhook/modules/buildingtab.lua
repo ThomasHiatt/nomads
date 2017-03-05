@@ -312,7 +312,7 @@ buildingTab = {
 "ueb1104",
 "uab1303",
 "uab1104",
-"inb1103",
+"inb1104",
 "inb1303",
 },
 ["Energy_Storage"] = {
@@ -327,7 +327,7 @@ buildingTab = {
 "urb1106",
 "ueb1106",
 "uab1106",
-"inb1108",
+"inb1106",
 },
 ["Point_Defense"] = {
 "xsb2301",
@@ -509,7 +509,8 @@ buildingTab = {
 ["T2_Fighter/Bomber"] = {
 "dea0202",
 "dra0202",
-"xsa0202",},
+"xsa0202",
+"ina2002",},
 ["T2_Gatling_Bot"] = {
 "del0204",},
 ["T2_Rocket_Bot"] = {
