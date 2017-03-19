@@ -898,8 +898,10 @@ inb9002_desc = "Nomads Structure"
 inb9002_help = "Nomads Structure"
 inu9002_name = "NC1001B"
 
-
-
+-- starbase
+inc0002_desc = "Planetary Surveillance Starbase"
+inc0002_help = "This starbase was build to monitor the activity on the planet and in the orbit."
+inc0002_name = "Planetary Surveillance Starbase"
 
 
 --------------------------------------------------------
